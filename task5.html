@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive practice</title>
+    <style>
+        .imgg{
+            width: 34%;
+            border-radius: 16px;
+        }
+        .btn{
+            padding: 15px 30px;
+            background-color: aquamarine;
+            color: red;
+            font-weight: 900;
+        }
+        .left-side{
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .right-side{
+            display: flex;
+            gap: 20px;
+        }
+        @media screen and (max-width:576px) {
+            .left-side{
+                flex-direction: column;
+            }
+            .right-side{
+                flex-direction: column-reverse;
+                
+            }
+            .imgg{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="./images/food.jpg" alt="">
+            <div>
+                <h2>My name is abdul wahid khan</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sapiente perferendis ea repellendus voluptate aperiam necessitatibus corporis ipsam blanditiis magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sapiente perferendis ea repellendus voluptate aperiam necessitatibus corporis ipsam blanditiis magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sapiente perferendis ea repellendus voluptate aperiam necessitatibus corporis ipsam blanditiis magni.</p>
+                <button class="btn">Click me</button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div>
+                <h2>My name is abdul wahid khan</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sapiente perferendis ea repellendus voluptate aperiam necessitatibus corporis ipsam blanditiis magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sapiente perferendis ea repellendus voluptate aperiam necessitatibus corporis ipsam blanditiis magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sapiente perferendis ea repellendus voluptate aperiam necessitatibus corporis ipsam blanditiis magni.</p>
+                <button class="btn">Click me</button>
+            </div>
+            <img src="./images/es.jpg" alt="" class="imgg">
+        </div>
+    </div>
+</body>
+</html>
