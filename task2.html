@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task two given by programming hero</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            height: 80vh;
+            /* grid-template-areas: auto; */
+        }
+        .box{
+            border: 1px solid darkgreen;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            
+        }
+        .b1{
+            grid-row: span 2;
+            background-color: palevioletred;
+            
+        }
+        .b2{
+            grid-column: span 2;
+            background-color: rebeccapurple;
+        }
+
+        @media screen and (max-width:576px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+            .b1{
+            grid-row: span 1;
+        }
+        .b2{
+            grid-column: span 1;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b1">First</div>
+        <div class="box b2">Second</div>
+        <div class="box b3" style="background-color: aqua;">Third</div>
+        <div class="box b4" style="background-color: fuchsia;">Fourth</div>
+    </div>
+</body>
+</html>
